@@ -12,7 +12,7 @@
 + **Auth:** JSON Web Token (JWT)
 + **Backend Deployment:** GCP App Engine
 + **AI Deployment:** GCP AI Platform
-
++ **ERD:** https://dbdiagram.io/d/6099a4c7b29a09603d14403f
 ## Plant API
 
 ### Get Plant by Id
