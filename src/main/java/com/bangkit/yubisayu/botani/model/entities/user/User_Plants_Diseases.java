@@ -17,6 +17,12 @@ import java.sql.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table("USERS PLANTS DISEASES")
-public class User_Plants_Diseases {
+public class User_Plants_Diseases extends BaseEntity {
+
+    @Column(UserConstant.USER_PLANT_ID)
+    private String userPlantId;
+
+    @Column(UserConstant.PLANT_DISEASE_ID)
+    private String plantDiseasesId;
 
 }

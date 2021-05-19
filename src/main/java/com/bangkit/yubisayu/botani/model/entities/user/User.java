@@ -1,3 +1,4 @@
+public
 package com.bangkit.yubisayu.botani.model.entities.user;
 
 import com.bangkit.yubisayu.botani.constants.UserConstant;

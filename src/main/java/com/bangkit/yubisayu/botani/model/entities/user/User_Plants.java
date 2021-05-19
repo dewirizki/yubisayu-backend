@@ -1,3 +1,4 @@
+public
 package com.bangkit.yubisayu.botani.model.entities.user;
 
 import com.bangkit.yubisayu.botani.constants.UserConstant;
@@ -15,31 +16,31 @@ import java.sql.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table("USERS_PLANTS")
+@Table("USERS PLANTS")
 public class User_plants extends BaseEntity {
 
-    @Column(UserConstant.FULLNAME)
-    private String fullName;
+    @Column(UserConstant.PLANT_ID)
+    private String plantId;
 
-    @Column(UserConstant.EMAIL)
-    private String email;
+    @Column(UserConstant.USER_ID)
+    private String userId;
 
-    @Column(UserConstant.PROFILE_PICTURE)
+    @Column(UserConstant.USER_PLANT_NAME)
     private String profilePicture;
 
-    @Column(UserConstant.ADDRESS)
-    private String address;
+    @Column(UserConstant.PLANT_HEALTH)
+    private Double plantHealth;
 
-    @Column(UserConstant.CITY)
-    private String city;
+    @Column(UserConstant.PLANT_IMAGE)
+    private String plantImg;
 
-    @Column(UserConstant.PASSWORD)
-    private String password;
+    @Column(UserConstant.PLANT_DETAIL)
+    private String plantDetail;
 
-    @Column(UserConstant.SEX)
-    private int sex;
+    @Column(UserConstant.PLANT_PHASE)
+    private String plantPhase;
 
-    @Column(UserConstant.BIRTH_DATE)
-    private Date birthDate;
+    @Column(UserConstant.PLANT_SUGGESTION)
+    private String plantSuggest;
 
 }
