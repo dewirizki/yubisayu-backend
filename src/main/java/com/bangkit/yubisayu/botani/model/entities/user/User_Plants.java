@@ -1,7 +1,5 @@
 package com.bangkit.yubisayu.botani.model.entities.user;
 
-public package com.bangkit.yubisayu.botani.model.entities.user;
-
 import com.bangkit.yubisayu.botani.constants.UserConstant;
 import com.bangkit.yubisayu.botani.model.entities.base.BaseEntity;
 import lombok.AllArgsConstructor;
