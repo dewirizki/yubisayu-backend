@@ -1,7 +1,7 @@
 package com.bangkit.yubisayu.botani.controller;
 
 import com.bangkit.yubisayu.botani.constants.ApiPath;
-import com.bangkit.yubisayu.botani.model.entities.user.User;
+import com.bangkit.yubisayu.botani.model.entities.user.Users;
 import com.bangkit.yubisayu.botani.service.UserService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ public class UserController {
     private UserService userService;
 
     @GetMapping(ApiPath.USERS_ID)
-    public Mono<User> getCustomerById(@PathVariable String id) throws Exception {
+    public Mono<Users> getCustomerById(@PathVariable String id) throws Exception {
         return userService.getUserById(id);
     }
 }
