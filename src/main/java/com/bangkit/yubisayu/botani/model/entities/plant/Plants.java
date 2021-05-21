@@ -1,7 +1,6 @@
-public
-package com.bangkit.yubisayu.botani.model.entities.user;
+package com.bangkit.yubisayu.botani.model.entities;
 
-import com.bangkit.yubisayu.botani.constants.UserConstant;
+import com.bangkit.yubisayu.botani.constants.PlantsConstant;
 import com.bangkit.yubisayu.botani.model.entities.base.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,43 +9,42 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
-import java.sql.Date;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table("PLANTS")
+@Table(PlantsConstant.PLANTS)
 public class Plants extends BaseEntity {
 
-    @Column(UserConstant.PLANT_NAME)
+    @Column(PlantsConstant.PLANT_NAME)
     private String plantName;
 
-    @Column(UserConstant.PLANT_CLASS)
+    @Column(PlantsConstant.PLANT_CLASS)
     private String plantClass;
 
-    @Column(UserConstant.PLANT_SPECIES)
+    @Column(PlantsConstant.PLANT_SPECIES)
     private String plantSpecies;
 
-    @Column(UserConstant.PLANT_HUMIDITY)
+    @Column(PlantsConstant.PLANT_HUMIDITY)
     private Double plantHumidity;
 
-    @Column(UserConstant.PLANT_LIGHTING)
+    @Column(PlantsConstant.PLANT_LIGHTING)
     private Double plantLight;
 
-    @Column(UserConstant.PLANT_FERTILIZER)
+    @Column(PlantsConstant.PLANT_FERTILIZER)
     private Double plantFertilizer;
 
-    @Column(UserConstant.PLANT_PRICE)
+    @Column(PlantsConstant.PLANT_PRICE)
     private Float price;
 
-    @Column(UserConstant.PLANT_SALES_PRICE)
+    @Column(PlantsConstant.PLANT_SALES_PRICE)
     private Float salesPrice;
 
-    @Column(UserConstant.PLANT_MONTH_HARVEST)
+    @Column(PlantsConstant.PLANT_MONTH_HARVEST)
     private String monthHarvest;
 
-    @Column(UserConstant.PLANT_PREPARATION)
+    @Column(PlantsConstant.PLANT_PREPARATION)
     private String plantPreparation;
 
 }

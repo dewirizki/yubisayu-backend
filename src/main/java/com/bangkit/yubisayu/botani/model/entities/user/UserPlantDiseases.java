@@ -1,7 +1,6 @@
-public
-package com.bangkit.yubisayu.botani.model.entities.user;
+package com.bangkit.yubisayu.botani.model.entities;
 
-import com.bangkit.yubisayu.botani.constants.UserConstant;
+import com.bangkit.yubisayu.botani.constants.UserPlantDiseasesConstant;
 import com.bangkit.yubisayu.botani.model.entities.base.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,19 +9,18 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
-import java.sql.Date;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table("USERS PLANTS DISEASES")
-public class User_Plants_Diseases extends BaseEntity {
+@Table(UserPlantDiseasesConstant.USER_PLANT_DISEASES)
+public class UserPlantDiseases extends BaseEntity {
 
-    @Column(UserConstant.USER_PLANT_ID)
+    @Column(UserPlantDiseasesConstant.USER_PLANT_ID)
     private String userPlantId;
 
-    @Column(UserConstant.PLANT_DISEASE_ID)
+    @Column(UserPlantDiseasesConstant.PLANT_DISEASES_ID)
     private String plantDiseasesId;
 
 }

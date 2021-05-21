@@ -1,5 +1,4 @@
-public
-package com.bangkit.yubisayu.botani.model.entities.user;
+package com.bangkit.yubisayu.botani.model.entities;
 
 import com.bangkit.yubisayu.botani.constants.UserConstant;
 import com.bangkit.yubisayu.botani.model.entities.base.BaseEntity;
@@ -16,8 +15,8 @@ import java.sql.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table("USERS")
-public class User extends BaseEntity {
+@Table(UserConstant.USERS)
+public class Users extends BaseEntity {
 
     @Column(UserConstant.FULLNAME)
     private String fullName;

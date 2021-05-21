@@ -1,7 +1,6 @@
-public
-package com.bangkit.yubisayu.botani.model.entities.user;
+package com.bangkit.yubisayu.botani.model.entities;
 
-import com.bangkit.yubisayu.botani.constants.UserConstant;
+import com.bangkit.yubisayu.botani.constants.PlantDiseasesConstant;
 import com.bangkit.yubisayu.botani.model.entities.base.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,19 +15,19 @@ import java.sql.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table("PLANT DISEASES")
-public class Plant_diseases extends BaseEntity {
+@Table(PlantDiseasesConstant.PLANT_DISEASES)
+public class PlantDiseases extends BaseEntity {
 
-    @Column(UserConstant.DISEASE_NAME)
+    @Column(PlantDiseasesConstant.DISEASE_NAME)
     private String diseaseName;
 
-    @Column(UserConstant.DISEASE_DETAIL)
+    @Column(PlantDiseasesConstant.DISEASE_DETAIL)
     private String diseaseDetail;
 
-    @Column(UserConstant.DISEASE_TREATMENT)
+    @Column(PlantDiseasesConstant.DISEASE_TREATMENT)
     private String diseaseTreatment;
 
-    @Column(UserConstant.DISEASE_TREATMENT_VIDEOS)
+    @Column(PlantDiseasesConstant.DISEASE_TREATMENT_VIDEOS)
     private String diseaseTreatmentVid;
 
 }

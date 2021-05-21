@@ -1,7 +1,6 @@
-public
-package com.bangkit.yubisayu.botani.model.entities.user;
+package com.bangkit.yubisayu.botani.model.entities;
 
-import com.bangkit.yubisayu.botani.constants.UserConstant;
+import com.bangkit.yubisayu.botani.constants.UserPlantsConstant;
 import com.bangkit.yubisayu.botani.model.entities.base.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,37 +9,36 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
-import java.sql.Date;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table("USERS PLANTS")
-public class User_plants extends BaseEntity {
+@Table(UserPlantsConstant.USER_PLANTS)
+public class UserPlants extends BaseEntity {
 
-    @Column(UserConstant.PLANT_ID)
+    @Column(UserPlantsConstant.PLANT_ID)
     private String plantId;
 
-    @Column(UserConstant.USER_ID)
+    @Column(UserPlantsConstant.USER_ID)
     private String userId;
 
-    @Column(UserConstant.USER_PLANT_NAME)
+    @Column(UserPlantsConstant.USER_PLANT_NAME)
     private String profilePicture;
 
-    @Column(UserConstant.PLANT_HEALTH)
+    @Column(UserPlantsConstant.PLANT_HEALTH)
     private Double plantHealth;
 
-    @Column(UserConstant.PLANT_IMAGE)
+    @Column(UserPlantsConstant.PLANT_IMAGE)
     private String plantImg;
 
-    @Column(UserConstant.PLANT_DETAIL)
+    @Column(UserPlantsConstant.PLANT_DETAIL)
     private String plantDetail;
 
-    @Column(UserConstant.PLANT_PHASE)
+    @Column(UserPlantsConstant.PLANT_PHASE)
     private String plantPhase;
 
-    @Column(UserConstant.PLANT_SUGGESTION)
+    @Column(UserPlantsConstant.PLANT_SUGGESTION)
     private String plantSuggest;
 
 }

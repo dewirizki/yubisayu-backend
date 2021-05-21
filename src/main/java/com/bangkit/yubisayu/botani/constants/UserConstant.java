@@ -1,7 +1,7 @@
 package com.bangkit.yubisayu.botani.constants;
 
 public class UserConstant {
-
+    public static final String USERS = "USERS";
     public static final String FULLNAME = "full_name";
     public static final String EMAIL = "email";
     public static final String PROFILE_PICTURE = "profile_picture";
