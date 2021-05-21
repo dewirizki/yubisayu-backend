@@ -1,4 +1,4 @@
-package com.bangkit.yubisayu.botani.model.entities;
+package com.bangkit.yubisayu.botani.model.entities.plant;
 
 import com.bangkit.yubisayu.botani.constants.PlantDiseasesConstant;
 import com.bangkit.yubisayu.botani.model.entities.base.BaseEntity;

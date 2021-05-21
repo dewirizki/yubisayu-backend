@@ -1,4 +1,4 @@
-package com.bangkit.yubisayu.botani.model.entities;
+package com.bangkit.yubisayu.botani.model.entities.user;
 
 import com.bangkit.yubisayu.botani.constants.UserPlantCheckupsConstant;
 import com.bangkit.yubisayu.botani.model.entities.base.BaseEntity;
