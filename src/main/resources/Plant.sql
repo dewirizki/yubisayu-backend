@@ -1,0 +1,2 @@
+INSERT INTO plant_diseases (disease_name, disease_detail,disease_treatment,disease_treatment_videos) VALUES();
+INSERT INTO plants (plant_name,plant_class,plant_species,plant_humidity,plant_humidity,plant_lighting,plant_fertilizer,plant_price,plant_sales_price,plant_month_harvest,plant_preparation) VALUES();
